@@ -66,6 +66,6 @@ for p in people:
 
 print(f"{friend_2.name} has {friend_2.age} years old.")
 
-#print(person_1.occupation) using @property
-#print(person_1.introduce())  through method
+#print(person_1.occupation) using @property getter
+#print(person_1.get_occupation())  through method getter
 #print(person_1.__occupation) error, private bolgon uchun tuz access jok

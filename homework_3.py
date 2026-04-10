@@ -1,4 +1,4 @@
-from datetime import datetime,timedelta
+from datetime import datetime
 
 class Person:
     def __init__(self, name, birth_date, occupation, higher_education):
@@ -23,7 +23,7 @@ class Person:
 
     @property
     def age(self):
-        age = round((datetime.now() - datetime.strptime(self.__birth_date, "%Y-%m-%d")).days/365)
+        age = round((datetime.now() - datetime.strptime(self.__birth_date, "%Y-%m-%d")).days/365) #strptime() teksti date ailantuu
         return age
 
     def introduce(self):

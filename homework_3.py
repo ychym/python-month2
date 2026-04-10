@@ -7,12 +7,15 @@ class Person:
         self.__occupation = occupation
         self.__higher_education = higher_education
 
-    # getter
+    # # getter *method
+    # def get_occupation(self):
+    #     return self.__occupation
+
+    # getter @property *attribute
     @property
     def occupation(self):
         return self.__occupation
 
-    # getter
     @property
     def higher_education(self):
         return self.__higher_education
@@ -66,6 +69,6 @@ for p in people:
 
 print(f"{friend_2.name} has {friend_2.age} years old.")
 
-#print(person_1.occupation) using @property getter
-#print(person_1.get_occupation())  through method getter
+#print(person_1.occupation) using @property
+#print(person_1.get_occupation()) # through method getter
 #print(person_1.__occupation) error, private bolgon uchun tuz access jok

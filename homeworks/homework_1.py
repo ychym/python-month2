@@ -4,6 +4,7 @@ class Person:
         self.birth_date = birth_date
         self.occupation = occupation
         self.higher_education = higher_education
+
     def introduce(self):
         print(f"My name is {self.name}.I was born in {self.birth_date}."
               f"My occupation is {self.occupation}."

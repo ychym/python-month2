@@ -6,3 +6,10 @@ venv/
 .env/
 
 database.sqlite
+#database.sqlite
+#database.sqlite3
+#database.db
+*.sqlite
+*.sqlite3
+*.db
+#* means all

@@ -30,7 +30,7 @@ class Person:
         return age
 
     def introduce(self):
-        print (f"My name is {self.name}."
+        print(f"My name is {self.name}."
                 f"I was born in {self.birth_date}."
                 f"My occupation is {self.__occupation}."
                 f"Higher education: {'Yes' if self.__higher_education else 'No'}")

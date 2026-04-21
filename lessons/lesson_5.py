@@ -5,6 +5,7 @@ class Animal:
 #swimming and flying ??
 class Swimming(Animal):
     def move(self):
+        super().move()
         print("Swimming")
 
 class Flying(Animal):
@@ -12,7 +13,7 @@ class Flying(Animal):
         super().move()
         print("Flying")
 
-class Duck(Swimming,Flying):
+class Duck(Flying, Swimming):
     def move(self):
         super().move()
         print("Duck is swimming and flying")
@@ -20,5 +21,5 @@ class Duck(Swimming,Flying):
 
 duck1 = Duck()
 duck1.move()
-# method resolution order
+# method resolution order чечүү тартиби
 print(Duck.__mro__)
